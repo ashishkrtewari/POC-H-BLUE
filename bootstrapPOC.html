@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap-3.3.6-dist\css\bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap-3.3.6-dist\css\base.css">
+</head>
+<body>
+
+<div class="container-fluid" id="mainContainer" style="margin-bottom: 100px;">
+  <div class="tiles">
+    <div class="customText">
+      <h2>How can we help you today?</h2>
+    </div>
+    <div class="tilesInner row">
+      <a><div class = "col-xs-6 col-sm-4 customTile" onclick="next1();" style="cursor: pointer;"><div class="customIcon"><i class="flaticon-medical"></i></div><label class="custom-label text-center">My Coverage</label></div></a>
+      <a><div class = "col-xs-6 col-sm-4 customTile" onclick="next2();" style="cursor: pointer;"><div class="customIcon"><i class="flaticon-person"></i></div><label class="custom-label text-center">Find Care</label></div></a>
+      <a><div class = "col-xs-6 col-sm-4 customTile" onclick="next3();" style="cursor: pointer;"><div class="customIcon"><i class="flaticon-clock"></i></div><label class="custom-label text-center">My Claims</label></div></a>
+      <a><div class = "col-xs-6 col-sm-4 customTile" onclick="next4();" style="cursor: pointer;"><div class="customIcon"><i class="flaticon-money"></i></div><label class="custom-label text-center">Pay Bill</label></div></a>
+      <a><div class = "col-xs-6 col-sm-4 customTile" onclick="next5();" style="cursor: pointer;"><div class="customIcon"><i class="flaticon-medical-1"></i></div><label class="custom-label text-center">Need Help</label></div></a>
+      <a><div class = "col-xs-6 col-sm-4 customTile" onclick="next6();" style="cursor: pointer;"><div class="customIcon"><i class="flaticon-three"></i></div><label class="custom-label text-center">Others</label></div></a>
+    </div>
+  </div>
+</div>
+
+  <div class="container-fluid" id="container1" style="display:none; margin-bottom: 100px;" >
+    <div class="tiles">
+      <div class="customText">
+        <a class="btn btn-primary homeButton" onclick="previous();">Home</a>
+         <h2>My Coverage</h2>
+       </div>
+       <div class="tilesInner row">
+      	<a><div class ="col-xs-6 col-sm-4 customTile"><div class="customIcon"><i class="flaticon-business"></i></div><label class="custom-label text-center">View/request ID cards</label></div></a>
+      	<a><div class ="col-xs-6 col-sm-4 customTile"><div class="customIcon"><i class="flaticon-shapes"></i></div><label class="custom-label text-center">View prescription coverage info</label></div></a>
+      	<a><div class ="col-xs-6 col-sm-4 customTile"><div class="customIcon"><i class="flaticon-interface-1"></i></div><label class="custom-label text-center">Eligibility Check</label></div></a>
+      	<a><div class ="col-xs-6 col-sm-4 customTile"><div class="customIcon"><i class="flaticon-logo"></i></div><label class="custom-label text-center">Change PCP</label></div></a>
+      	<a><div class ="col-xs-6 col-sm-4 customTile"><div class="customIcon"><i class="flaticon-profile"></i></div><label class="custom-label text-center">Profile</label></div></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="container2" style="display:none; margin-bottom: 100px;" >
+    <div class="tiles">
+      <div class="customText">
+        <a class="btn btn-primary homeButton" onclick="previous();">Home</a>
+         <h2>Find Care</h2>
+       </div>
+       <div class="tilesInner row">
+      	<a><div class ="col-xs-6 col-sm-4 customTile"><div class="customIcon"><i class="flaticon-people"></i></div><label class="custom-label text-center">Telemedicine Visits</label></div></a>
+      	<a><div class ="col-xs-6 col-sm-4 customTile"><div class="customIcon"><i class="flaticon-person-1"></i></div><label class="custom-label text-center">Horizon Nurse line</label></div></a>
+      	<a><div class ="col-xs-6 col-sm-4 customTile"><div class="customIcon"><i class="flaticon-location"></i></div><label class="custom-label text-center">Doctor/Hospital Finder</label></div></a>
+      </div>
+    </div>
+  </div>
+
+   <div class="container-fluid" id="container3" style="display:none; margin-bottom: 100px;" >
+    <div class="tiles">
+      <div class="customText">
+        <a class="btn btn-primary homeButton" onclick="previous();">Home</a>
+         <h2>My Claims</h2>
+       </div>
+       <div class="tilesInner row">
+      	<a><div class ="col-xs-6 col-sm-4 customTile"><div class="customIcon"><i class="flaticon-paper"></i></div><label class="custom-label text-center">View Claims </label></div></a>
+      	<a><div class ="col-xs-6 col-sm-4 customTile"><div class="customIcon"><i class="flaticon-business-1"></i></div><label class="custom-label text-center">View Statement of Payment</label></div></a>
+      	<a><div class ="col-xs-6 col-sm-4 customTile"><div class="customIcon"><i class="flaticon-tool"></i></div><label class="custom-label text-center">Show me my deductible/out of pocket</label></div></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="container4" style="display:none; margin-bottom: 100px;" >
+    <div class="tiles">
+      <div class="customText">
+        <a class="btn btn-primary homeButton" onclick="previous();">Home</a>
+         <h2>Pay Bill</h2>
+       </div>
+       <div class="tilesInner row">
+      	<a><div class ="col-xs-6 col-sm-4 customTile"><div class="customIcon"><i class="flaticon-commerce"></i></div><label class="custom-label text-center">Billing Summary</label></div></a>
+      	<a><div class ="col-xs-6 col-sm-4 customTile"><div class="customIcon"><i class="flaticon-business-1"></i></div><label class="custom-label text-center">Payment History</label></div></a>
+      	<a><div class ="col-xs-6 col-sm-4 customTile"><div class="customIcon"><i class="flaticon-money-1"></i></div><label class="custom-label text-center">Make a payment</label></div></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="container5" style="display:none; margin-bottom: 100px;" >
+    <div class="tiles">
+      <div class="customText">
+        <a class="btn btn-primary homeButton" onclick="previous();">Home</a>
+         <h2>Need help ?</h2>
+       </div>
+       <div class="tilesInner row">
+      	<a><div class ="col-xs-6 col-sm-4 customTile"><div class="customIcon"><i class="flaticon-interface"></i></div><label class="custom-label text-center">FAQ's</label></div></a>
+      	<a><div class ="col-xs-6 col-sm-4 customTile"><div class="customIcon"><i class="flaticon-people-1"></i></div><label class="custom-label text-center">Chat</label></div></a>
+      	<a><div class ="col-xs-6 col-sm-4 customTile"><div class="customIcon"><i class="flaticon-balloon"></i></div><label class="custom-label text-center">Message Center</label></div></a>
+    		<a><div class ="col-xs-6 col-sm-4 customTile"><div class="customIcon"><i class="flaticon-telephone"></i></div><label class="custom-label text-center">Contact us</label></div></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="container6" style="display:none; margin-bottom: 100px;" >
+    <div class="tiles">
+      <div class="customText">
+        <a class="btn btn-primary homeButton" onclick="previous();">Home</a>
+         <h2>Others</h2>
+       </div>
+       <div class="tilesInner row">
+    	  <a><div class ="col-xs-6 col-sm-4 customTile"><div class="customIcon"><i class="flaticon-business"></i></div><label class="custom-label text-center">Authorization / Referrals</label></div></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="bootstrap-3.3.6-dist\js\jquery-1.8.0.min.js"></script>
+  <script src="bootstrap-3.3.6-dist\js\bootstrap.min.js"></script>
+  <script>
+
+  function next1(){
+
+  $("#mainContainer").hide();
+  $("#container1").show();
+  $("#container2").hide();
+  $("#container3").hide();
+  $("#container4").hide();
+  $("#container5").hide();
+  $("#container6").hide();
+   }
+
+  function next2(){
+
+  $("#mainContainer").hide();
+  $("#container1").hide();
+  $("#container2").show();
+  $("#container3").hide();
+  $("#container4").hide();
+  $("#container5").hide();
+  $("#container6").hide();
+   }
+
+   function next3(){
+
+  $("#mainContainer").hide();
+  $("#container1").hide();
+  $("#container2").hide();
+  $("#container3").show();
+  $("#container4").hide();
+  $("#container5").hide();
+  $("#container6").hide();
+   }
+
+   function next4(){
+  $("#mainContainer").hide();
+  $("#container1").hide();
+  $("#container2").hide();
+  $("#container3").hide();
+  $("#container4").show();
+  $("#container5").hide();
+  $("#container6").hide();
+   }
+
+    function next5(){
+  $("#mainContainer").hide();
+  $("#container1").hide();
+  $("#container2").hide();
+  $("#container3").hide();
+  $("#container4").hide();
+  $("#container5").show();
+  $("#container6").hide();
+   }
+
+    function next6(){
+  $("#mainContainer").hide();
+  $("#container1").hide();
+  $("#container2").hide();
+  $("#container3").hide();
+  $("#container4").hide();
+  $("#container5").hide();
+  $("#container6").show();
+   }
+
+
+   function previous(){
+
+  $("#mainContainer").show();
+  $("#container1").hide();
+  $("#container2").hide();
+  $("#container3").hide();
+  $("#container4").hide();
+  $("#container5").hide();
+  $("#container6").hide();
+  }
+
+  </script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+     // Stuff to do as soon as the DOM is ready
+     $(".customTile").on("mouseover",function(){
+       $(this).css({'color':'#065494','background-color': 'rgba(154,220,255,0.6)'});
+       $(this).find('.customIcon').css('color', '#065494');
+     });
+     $(".customTile").on("click",function(){
+       $(this).addClass('inshadow');
+     });
+     $(".customTile").on("mouseleave",function(){
+       $(this).css({'color':'#989898','background-color': '#FFF'});
+       $(this).removeClass('inshadow');
+       $(this).find('.customIcon').css('color', '#989898');
+     });
+  });
+  </script>
+
+</body>
+</html>
